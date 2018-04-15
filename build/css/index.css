@@ -460,15 +460,20 @@ html, body {
 body {
   font: 16px/1.5 'Montserrat', 'arial', 'sans-serif'; }
 
+.wrapper {
+  background: #efefef !important;
+  height: 100%; }
+
 .container {
   max-width: 1140px;
   width: 100%;
   margin: 0 auto; }
 
 .header {
+  background: #fff;
   height: 75px;
-  padding: 0 15px;
-  border: 1px solid #666;
+  padding: 0 35px;
+  border-top: none;
   overflow: hidden; }
   .header__logo {
     line-height: 75px;
@@ -512,11 +517,12 @@ body#gallery #nav__link--gallery {
   width: 100%;
   background: url(../images/1.jpg) no-repeat center center;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  margin-bottom: 42px; }
 
 .text-welcome-container {
   position: absolute;
-  bottom: -56px;
+  bottom: -38px;
   margin-left: 15px; }
 
 .text-welcome-container__name-singer {
@@ -529,4 +535,28 @@ body#gallery #nav__link--gallery {
   font-weight: 300;
   font-size: 20px;
   text-align: center;
-  color: #999; }
+  color: #999;
+  line-height: 14px; }
+
+.article {
+  background: #fff; }
+  .article-item {
+    padding: 46px 35px 42px; }
+  .article__title {
+    color: #333;
+    padding-bottom: 16px;
+    font-weight: 700; }
+  .article__text {
+    color: #666; }
+  .article__link {
+    margin-top: 12px;
+    display: inline-block;
+    border: 4px solid #cc0000;
+    color: #333;
+    padding: 10px 16px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: background .35s, color .35s; }
+    .article__link:hover {
+      background: #cc0000;
+      color: #fff; }

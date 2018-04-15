@@ -5,8 +5,7 @@
 }
 
 h1, h2, h3, h4, p, a, input, ul, li {
-	margin: 0;
-	padding: 0;
+	margin: 0; padding: 0;
 	font-family: 'Montserrat';
 }
 
@@ -43,6 +42,11 @@ body {
 	font: 16px/1.5 'Montserrat', 'arial', 'sans-serif';
 }
 
+.wrapper {
+    background: #efefef !important;
+    height: 100%;
+}
+
 .container {
 	max-width: 1140px;
 	width: 100%;
@@ -51,9 +55,10 @@ body {
 
 // header start
 .header {
+    background: #fff;
     height: 75px;
-    padding: 0 15px;
-    border: 1px solid #666;
+    padding: 0 35px;
+    border-top: none;
     overflow: hidden;
     &__logo {
         line-height: 75px;
@@ -112,11 +117,12 @@ body#gallery #nav__link--gallery {
     background: url('img/1.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
+    margin-bottom: 42px;
 }
 
 .text-welcome-container {
     position: absolute;
-    bottom: -56px;
+    bottom: -38px;
     margin-left: 15px;
 }
 
@@ -132,6 +138,41 @@ body#gallery #nav__link--gallery {
     font-size: 20px;
     text-align: center;
     color: #999;
+    line-height: 14px;
 } 
 
 // welcome end
+
+// article start
+
+.article {
+    background: #fff;
+    &-item {
+        padding: 46px 35px 42px;
+    }
+    &__title {
+        color: #333;
+        padding-bottom: 16px;
+        font-weight: 700;
+    }
+    &__text {
+        color: #666;
+
+    }
+    &__link {
+        margin-top: 12px;
+        display: inline-block;
+        border: 4px solid $accent;
+        color: #333;
+        padding: 10px 16px;
+        font-weight: 700;
+        font-size: 18px;
+        transition: background .35s, color .35s;
+        &:hover {
+            background: $accent;
+            color: #fff;
+        }
+    }
+}
+
+// aricle end
