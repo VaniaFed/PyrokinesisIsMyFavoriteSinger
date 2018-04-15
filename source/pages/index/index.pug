@@ -4,6 +4,24 @@ html
         meta(charset = 'utf-8')
         meta(name='viewport', content="initial-scale=1.0, width=device-width")
         title Pyrokinesis is my Favorite Singer
-    body
-        header
-           .logo VaniaFed
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,800,900', rel='stylesheet')
+    body#main
+        .wrapper
+            .container
+                header.header.clearfix
+                        a.header__logo.logo(href="index.html") Vania
+                            span.mod--color-red Fed
+                        nav.nav
+                            ul.nav-list
+                                li.nav__item
+                                    a.nav__link#nav__link--main(href="index.html") Главная
+                                li.nav__item
+                                    a.nav__link#nav__link--biography(href="biography.html") Биография
+                                li.nav__item
+                                    a.nav__link#nav__link--discography(href="discography.html") Дискография
+                                li.nav__item
+                                    a.nav__link#nav__link--gallery(href="gallery.html") Галерея
+                .welcome-picture
+                    .text-welcome-container
+                        .text-welcome-container__name-singer Pyrokinesis
+                        .text-welcome-container__text-description мой любимый исполнитель

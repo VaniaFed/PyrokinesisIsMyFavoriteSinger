@@ -433,6 +433,12 @@ h1, h2, h3, h4, p, a, input, ul, li {
   padding: 0;
   font-family: 'Montserrat'; }
 
+li {
+  list-style: none; }
+
+a, a:hover, a:active, a:visited, a:focus {
+  text-decoration: none; }
+
 input {
   border: none;
   outline: none;
@@ -459,5 +465,68 @@ body {
   width: 100%;
   margin: 0 auto; }
 
+.header {
+  height: 75px;
+  padding: 0 15px;
+  border: 1px solid #666;
+  overflow: hidden; }
+  .header__logo {
+    line-height: 75px;
+    float: left; }
+
 .logo {
-  font-size: 44px; }
+  font-weight: 900;
+  font-size: 24px;
+  color: #333; }
+
+.mod--color-red {
+  color: #cc0000; }
+
+.nav {
+  line-height: 75px;
+  float: right;
+  font-size: 0; }
+  .nav__item {
+    margin-left: 14px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500; }
+    .nav__item:first-child {
+      margin-left: 0; }
+  .nav__link {
+    transition: border-bottom .3s;
+    color: #333; }
+    .nav__link:hover {
+      border-bottom: 4px solid #cc0000;
+      padding-bottom: 4px; }
+
+body#main #nav__link--main,
+body#biography #nav__link--biography,
+body#discography #nav__link--discography,
+body#gallery #nav__link--gallery {
+  color: #cc0000;
+  border: none; }
+
+.welcome-picture {
+  height: 350px;
+  width: 100%;
+  background: url(../images/1.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative; }
+
+.text-welcome-container {
+  position: absolute;
+  bottom: -56px;
+  margin-left: 15px; }
+
+.text-welcome-container__name-singer {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 900;
+  text-shadow: 1px 2px 4px #666; }
+
+.text-welcome-container__text-description {
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  color: #999; }
