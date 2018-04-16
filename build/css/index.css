@@ -458,11 +458,8 @@ html, body {
   padding: 0; }
 
 body {
-  font: 16px/1.5 'Montserrat', 'arial', 'sans-serif'; }
-
-.wrapper {
-  background: #efefef !important;
-  height: 100%; }
+  font: 16px/1.5 'Montserrat', 'arial', 'sans-serif';
+  background: #efefef !important; }
 
 .container {
   max-width: 1140px;
@@ -518,7 +515,7 @@ body#gallery #nav__link--gallery {
   background: url(../images/1.jpg) no-repeat center center;
   background-size: cover;
   position: relative;
-  margin-bottom: 42px; }
+  margin-bottom: 38px; }
 
 .text-welcome-container {
   position: absolute;
@@ -539,12 +536,27 @@ body#gallery #nav__link--gallery {
   line-height: 14px; }
 
 .article {
-  background: #fff; }
+  background: #fff;
+  margin-top: 50px;
+  padding: 46px 54px 32px;
+  box-shadow: 0 0 25px #ddd; }
   .article-item {
-    padding: 46px 35px 42px; }
+    padding-bottom: 30px; }
+    .article-item:last-child {
+      padding-bottom: 0; }
   .article__title {
     color: #333;
     padding-bottom: 16px;
+    font-weight: 700;
+    font-size: 30px; }
+  .article__title-main {
+    color: #333;
+    font-size: 36px;
+    padding-bottom: 10px;
+    font-weight: 800; }
+  .article__title-3 {
+    color: #333;
+    font-size: 18px;
     font-weight: 700; }
   .article__text {
     color: #666; }
@@ -560,3 +572,23 @@ body#gallery #nav__link--gallery {
     .article__link:hover {
       background: #cc0000;
       color: #fff; }
+  .article__img {
+    float: left;
+    width: 300px;
+    max-width: 100%;
+    margin-right: 20px;
+    border: 1px solid #ddd; }
+  .article__list {
+    margin: 0;
+    padding: 0;
+    margin-top: 14px;
+    display: inline-block; }
+  .article__list-item {
+    font-weight: 500;
+    margin-top: 4px; }
+
+#discography .article-item {
+  padding-bottom: 50px; }
+
+#discography .article__title {
+  padding-bottom: 24px; }

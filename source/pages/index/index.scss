@@ -29,6 +29,7 @@ input {
 	content: '';
 	display: block;
 	clear: both;
+    
 }
 
 html, body {
@@ -40,11 +41,7 @@ html, body {
 
 body {
 	font: 16px/1.5 'Montserrat', 'arial', 'sans-serif';
-}
-
-.wrapper {
     background: #efefef !important;
-    height: 100%;
 }
 
 .container {
@@ -114,10 +111,10 @@ body#gallery #nav__link--gallery {
 .welcome-picture {
     height: 350px;
     width: 100%;
-    background: url('img/1.jpg') no-repeat center center;
+    background: url('images/1.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
-    margin-bottom: 42px;
+    margin-bottom: 38px;
 }
 
 .text-welcome-container {
@@ -147,12 +144,30 @@ body#gallery #nav__link--gallery {
 
 .article {
     background: #fff;
+    margin-top: 50px;
+    padding: 46px 54px 32px;
+    box-shadow: 0 0 25px #ddd;
     &-item {
-        padding: 46px 35px 42px;
+        padding-bottom: 30px;
+        &:last-child {
+            padding-bottom: 0;
+        }
     }
     &__title {
         color: #333;
         padding-bottom: 16px;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    &__title-main {
+        color: #333;
+        font-size: 36px;
+        padding-bottom: 10px;
+        font-weight: 800;
+    }
+    &__title-3 {
+        color: #333;
+        font-size: 18px;
         font-weight: 700;
     }
     &__text {
@@ -173,6 +188,29 @@ body#gallery #nav__link--gallery {
             color: #fff;
         }
     }
+    &__img {
+        float: left;
+        width: 300px;
+        max-width: 100%;
+        margin-right: 20px;
+        border: 1px solid #ddd;
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+        margin-top: 14px;
+        display: inline-block;
+    }
+    &__list-item {
+        font-weight: 500;
+        margin-top: 4px;
+    }
+}
+#discography .article-item {
+    padding-bottom: 50px;
+}
+#discography .article__title {
+    padding-bottom: 24px;
 }
 
 // aricle end
