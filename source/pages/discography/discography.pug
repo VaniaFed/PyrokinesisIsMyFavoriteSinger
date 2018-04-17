@@ -1,11 +1,16 @@
 doctype html
 html
     head
+        link(href='fonts/stylesheet.css', rel='stylesheet')
         meta(charset = 'utf-8')
         meta(name='viewport', content="initial-scale=1.0, width=device-width")
         title Pyrokinesis is my Favorite Singer
         link(href='https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,800,900', rel='stylesheet')
     body#discography
+        a.link-to-top(href='#')
+            svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 129 129')
+                path.active-path(fill='#020101', d='M7.7 94.4c1.6 1.6 4.2 1.6 5.8 0l51-51.1 51.1 51.1c1.6 1.6 4.2 1.6 5.8 0 1.6-1.6 1.6-4.2 0-5.8L67.5 34.7c-.8-.8-1.8-1.2-2.9-1.2-1 0-2.1.4-2.9 1.2L7.8 88.6c-1.7 1.6-1.7 4.2-.1 5.8z', data-old_color='#0A0707', data-original='#000000')
+
         .wrapper
             .container
                 header.header.clearfix
@@ -107,3 +112,13 @@ html
                             li.article__list-item Цветы над черепами (ft. STED.D)
                             li.article__list-item Черная дыра
                             li.article__list-item Ад пуст, все бесы здесь
+        footer.footer.clearfix
+            .footer-part
+                ul.footer-list
+                    li.footer__item Разработал Федяков Иван
+                    li.footer__item Россия, Тверь, TverDev
+            .footer-part
+                ul.footer-list
+                    li.footer__item Домашнее задание по IT
+                    li.footer__item
+                        a.footer__link(href="tel:79201517879") +7 (920) 151 78 79

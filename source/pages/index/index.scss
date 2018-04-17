@@ -44,6 +44,44 @@ body {
     background: #efefef !important;
 }
 
+.link-to-top {
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: $accent;
+    text-align: cetner;
+    opacity: 0;
+    transition: all .3s;
+    &:hover {
+        background: #fff;
+        border: 2px solid $accent;
+        svg {
+            margin-top: -17px;
+        }
+        .active-path {
+            fill: $accent;
+        }
+    }
+
+    svg {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -12px;
+        margin-left: -15px;
+        transition: margin .2s;
+    }
+    .active-path {
+        fill: #fff;
+        transition: fill .4s;
+    }
+}
+
 .container {
 	max-width: 1140px;
 	width: 100%;
@@ -235,4 +273,26 @@ body#gallery #nav__link--gallery {
 
 // Gallery end
 
+// Footer start
+
+.footer {
+    background: #ddd;
+    padding: 50px 20px;
+    margin-top: 100px;
+    &-part {
+        float:left;
+        width: 50%;
+        //display: inline-block;
+    }
+    &__item {
+        text-align: center;
+        color: #666;
+        margin-top: 15px;
+    }
+    &__link {
+        color: $accent;
+    }
+}
+
+// Footer end
 
