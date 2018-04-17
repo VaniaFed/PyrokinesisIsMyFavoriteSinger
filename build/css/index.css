@@ -598,9 +598,9 @@ body#gallery #nav__link--gallery {
   .gallery-column {
     float: left;
     width: 33%;
-    padding-right: 10px; }
+    padding-right: 8px; }
   .gallery__image {
     max-width: 100%;
     min-width: 150px;
     display: inline-block;
-    padding-top: 10px; }
+    padding-top: 8px; }
