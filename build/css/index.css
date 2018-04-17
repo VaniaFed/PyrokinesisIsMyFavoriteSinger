@@ -550,7 +550,7 @@ body#gallery #nav__link--gallery {
 
 .text-welcome-container {
   position: absolute;
-  bottom: -38px;
+  bottom: -41px;
   margin-left: 15px; }
 
 .text-welcome-container__name-singer {
@@ -577,7 +577,7 @@ body#gallery #nav__link--gallery {
       padding-bottom: 0; }
   .article__title {
     color: #333;
-    padding-bottom: 16px;
+    padding-bottom: 12px;
     font-weight: 700;
     font-size: 30px; }
   .article__title-main {
@@ -639,11 +639,19 @@ body#gallery #nav__link--gallery {
 .footer {
   background: #ddd;
   padding: 50px 20px;
-  margin-top: 100px; }
+  margin-top: 100px; 
+}
+@media (max-width: 550px) {
+    .footer-part {
+      float: none;
+      width: 100%;
+    }
+}
+
   .footer-part {
     float: left;
     width: 50%; }
-  .footer__item {
+      .footer__item {
     text-align: center;
     color: #666;
     margin-top: 15px; }
