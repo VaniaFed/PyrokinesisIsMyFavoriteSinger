@@ -214,3 +214,26 @@ body#gallery #nav__link--gallery {
 }
 
 // aricle end
+
+// Gallery start
+
+
+.gallery {
+    font-size: 0;
+    &-column {
+        float: left;
+        width: 33%;
+        padding-right: 10px;
+    }
+    &__image {
+        max-width: 100%;
+        min-width: 150px;
+        display: inline-block;
+        padding-top: 10px;
+        
+    }
+}
+
+// Gallery end
+
+
