@@ -2,9 +2,11 @@ doctype html
 html
     head
         link(href='fonts/stylesheet.css', rel='stylesheet')
+        link(href="css/index.css" rel="stylesheet" type="text/css")
         meta(charset = 'utf-8')
         meta(name='viewport', content="initial-scale=1.0, width=device-width")
         title Pyrokinesis is my Favorite Singer
+        script(src="js/index.js" type="text/javascript")
     body#gallery
         a.link-to-top(href='#')
             svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 129 129')
@@ -32,23 +34,33 @@ html
                 article.article
                     .article-item 
                         h1.article__title-main Галерея
-                        .gallery.clearfix
-                            .gallery-column
-                                img.gallery__image(src="images/8.jpg")                                
-                                img.gallery__image(src="images/9.jpg")                                
-                                img.gallery__image(src="images/10.jpg")                                
-                                img.gallery__image(src="images/11.jpg")                                
-                                img.gallery__image(src="images/21.jpg")                                
-                            .gallery-column
-                                img.gallery__image(src="images/12.jpg")                                
-                                img.gallery__image(src="images/13.jpg")
-                                img.gallery__image(src="images/14.jpg")                                
-                                img.gallery__image(src="images/15.jpg")                                
-                            .gallery-column
-                                img.gallery__image(src="images/16.jpg")
-                                img.gallery__image(src="images/17.jpg")                                
-                                img.gallery__image(src="images/18.jpg")                                
-                                img.gallery__image(src="images/19.jpg")                                
+                        .gallery-container
+                            div.img-container
+                                img.gallery__image(src="img/8.jpg")                                
+                            div.img-container
+                                img.gallery__image(src="img/9.jpg")                                
+                            div.img-container
+                                img.gallery__image(src="img/10.jpg")                                
+                            div.img-container
+                                img.gallery__image(src="img/11.jpg")                                
+                            div.img-container
+                                img.gallery__image(src="img/21.jpg")                                
+                            div.img-container
+                                img.gallery__image(src="img/12.jpg")                                
+                            div.img-container
+                                img.gallery__image(src="img/13.jpg")
+                            div.img-container
+                                img.gallery__image(src="img/14.jpg")                                
+                            div.img-container
+                                img.gallery__image(src="img/15.jpg")                                
+                            div.img-container
+                                img.gallery__image(src="img/16.jpg")
+                            div.img-container
+                                img.gallery__image(src="img/17.jpg")                                
+                            div.img-container
+                                img.gallery__image(src="img/18.jpg")                                
+                            div.img-container
+                                img.gallery__image(src="img/19.jpg")                                
         footer.footer.clearfix
             .footer-part
                 ul.footer-list

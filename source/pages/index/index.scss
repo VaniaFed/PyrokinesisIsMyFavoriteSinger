@@ -149,7 +149,7 @@ body#gallery #nav__link--gallery {
 .welcome-picture {
     height: 350px;
     width: 100%;
-    background: url('images/1.jpg') no-repeat center center;
+    background: url('img/1.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
     margin-bottom: 38px;
@@ -256,18 +256,35 @@ body#gallery #nav__link--gallery {
 // Gallery start
 
 
-.gallery {
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
     font-size: 0;
-    &-column {
-        float: left;
-        width: 33%;
-        padding-right: 8px;
+        
+
+    .img-container:nth-child(2){
+        grid-row-start: 1;
+        grid-row-end: 3;
+        @media screen and (max-width: 680px) {
+            grid-row-start: auto;
+            grid-row-end: auto;
+        }
     }
-    &__image {
-        max-width: 100%;
-        min-width: 150px;
-        display: inline-block;
-        padding-top: 8px;
+
+    .img-container:nth-child(6){
+        grid-column-start: 1;
+        grid-column-end: 3;
+        @media screen and (max-width: 1042px) {
+            grid-column-start: auto;
+            grid-column-end: auto;
+        }
+    }
+
+    .gallery__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover
     }
 }
 
